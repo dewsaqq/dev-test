@@ -6,8 +6,8 @@ import java.util.List;
 
 /**
  * Class for finding pairs that sum up to 13. It sorts integer list and then checks if sum of next two elements is 13.
- * The algorithm breaks when first number is greater than 13 and continues when sum is greater than 13, because in
- * sorted list every further element will be greater.
+ * The algorithm finishes when first number is greater than 13 and breaks inner loop when sum is greater than 13,
+ * because in sorted list every further element will be greater and there is no need of more checking.
  */
 public class PairFinder {
     private static final int DESIRED_SUM = 13;
