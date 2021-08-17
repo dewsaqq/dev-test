@@ -10,12 +10,12 @@ public class Task2 {
         List<Integer> integerList = new ArrayList<>();
 
         System.out.println("Enter list of integers to pair up to 13 delimited by space: ");
-        System.out.println("*to accept write any sign at the end*");
+        System.out.println("***to accept write any sign at the end***");
         System.out.println("=====================================");
         while(scanner.hasNextInt()) {
             integerList.add(scanner.nextInt());
         }
-        
+
         PairFinder.findAndPrintPairs(integerList);
     }
 }

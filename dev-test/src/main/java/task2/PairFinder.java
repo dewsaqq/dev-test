@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class for finding pairs that sum up to 13. It sorts integer list and then checks if sum of next two elements is 13.
+ * The algorithm breaks when first number is greater than 13 and continues when sum is greater than 13, because in
+ * sorted list every further element will be greater.
+ */
 public class PairFinder {
     private static final int DESIRED_SUM = 13;
 

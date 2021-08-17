@@ -5,6 +5,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Class representing undirected graph. It uses adjacency list representation of graph with HashMap and LinkedList
+ * implementation. To determine number of graphs built with its vertices it uses Depth First Search algorithm.
+ */
 public class UndirectedGraph implements Graph {
     private final Map<Node, LinkedList<Node>> adjacencyList;
 

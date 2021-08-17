@@ -3,6 +3,11 @@ package task1;
 import java.util.List;
 import java.util.TreeSet;
 
+/**
+ * Class to output sorted list of distinct integers. It transforms List of integers to set, which is distinct by
+ * definition. It also uses TreeSet collection which is already sorted and has satisfactory time complexity
+ * of O(logn) for its all operations.
+ */
 public class DistinctSorter {
 
     private DistinctSorter() {}

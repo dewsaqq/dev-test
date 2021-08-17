@@ -3,6 +3,11 @@ package task3;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class representing node in graph. It checks whether its value is positive or not and throws exception in second case.
+ * It implements basic visitation methods and simple singletons for each node for clarity of testing, might be
+ * subject to change.
+ */
 public class Node {
     private static final Map<Integer, Node> nodes = new HashMap<>();
     private final int value;

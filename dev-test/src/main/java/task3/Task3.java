@@ -11,11 +11,12 @@ public class Task3 {
         System.out.print("Enter number of edges: ");
         numberOfEdges = scanner.nextInt();
 
-        System.out.println("Enter pairs of vartices: ");
+        System.out.println("Enter pairs of vertices: ");
         for(int i = 0; i < numberOfEdges; i++) {
             graph.addEdge(Node.getInstance(scanner.nextInt()), Node.getInstance(scanner.nextInt()));
         }
 
-        graph.printGraphData();
+        //graph.printGraphData(); //for better representation
+        System.out.println(graph.countNumberOfSubgraphs());
     }
 }

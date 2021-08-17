@@ -1,5 +1,8 @@
 package task2;
 
+/**
+ * Wrapper class for pair of numbers.
+ */
 public class Pair {
     private final int firstNumber, secondNumber;
 
