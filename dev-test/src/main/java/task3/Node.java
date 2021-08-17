@@ -14,6 +14,7 @@ public class Node {
 
     /* Simple singletons for each node */
     public static Node getInstance(int value) {
+        if(Integer.signum(value) != 1) throw new IllegalArgumentException();
         if(nodes.containsKey(value)) return nodes.get(value);
         else {
             Node newNode = new Node(value);
